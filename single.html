@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Sport</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-fixed">
+        <div class="container-fluid pl-120 pr-120 position-relative">
+            <div class="row d-flex align-items-center">
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <!-- Logo -->
+                    <p class="logo text-uppercase">
+                        <a href="index.html">Deep sleep</a>
+                    </p>
+                    <!-- End of Logo -->
+                </div>
+
+                <div class="col-lg-9 col-md-8 col-6 d-flex justify-content-end position-static">
+                    <!-- Nav Menu -->
+                    <div class="nav-menu-cover">
+                        <ul class="nav nav-menu">
+                            <li><a href="index.html">Main</a></li>
+                            <li class="menu-item-has-children"><a href="#">Articles</a>
+                                <ul class="sub-menu"><li class="sub-menu-close"> <i class="fa fa-long-arrow-left"></i> Articles</li>
+                                    
+                                    <li><a href="fb8ff03827a48d21a7052c4558c8dfc2.html">It's not about style. ...</a></li>
+                                    
+
+                                    <li><a href="2a7f5728d9477cd24330d60a3975c5bd.html">5 products that will B...</a></li>
+                                    
+
+                                    <li><a href="X6BiUfTNm8uhB7pQHBdIGn7.html">3 best products for ma...</a></li>
+                                    
+
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contacts</a></li>
+                            <li><a href="policy.html">Privacy policy</a></li>
+                            <li><a href="terms.html">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                    <!-- End of Nav Menu -->
+
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu-cover">
+                        <ul class="nav mobile-nav-menu">
+                            <li class="search-toggle-open">
+                                <img alt="" class="img-fluid svg" src="assets/images/search-icon.svg">
+                            </li>
+                            <li class="search-toggle-close hide">
+                                <img alt="" class="img-fluid" src="assets/images/close.svg">
+                            </li>
+                            <li class="nav-menu-toggle">
+                                <img alt="" class="img-fluid svg" src="assets/images/menu-toggler.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of Mobile Menu -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+    .header {
+        min-height: 107px;
+    }
+    .header .header-fixed {
+        padding: 20px 0px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        box-shadow: 0 0 2px -1px #000;
+        background: #ffffff;
+    }
+    .header .header-fixed.is-sticky {
+        padding: 0px 0px;
+        background-color: #fff;
+    }
+    @media only screen and (max-width: 991px) {
+        .header .logo {
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .header .logo {
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .nav-menu {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            padding: 0px 15px 0px 45px;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            z-index: -99;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .nav-menu {
+            padding: 0px 0px 0px 15px;
+        }
+    }
+    .nav-menu.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu.show {
+            margin-top: 0;
+        }
+    }
+    .nav-menu li {
+        position: relative;
+    }
+    .nav-menu li:hover > a {
+        color: #FF7171;
+    }
+    .nav-menu li.current-menu-item a {
+        color: #FF7171;
+    }
+    .nav-menu li.menu-item-has-children {
+        padding-right: 30px;
+        position: relative;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu li.menu-item-has-children {
+            position: static;
+        }
+    }
+    .nav-menu li.menu-item-has-children:hover > .sub-menu {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+    }
+    .nav-menu li.menu-item-has-children > a {
+        position: relative;
+    }
+    .nav-menu li.menu-item-has-children > a:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 100%;
+        margin-left: -23px;
+        font-family: FontAwesome;
+    }
+    .nav-menu li a {
+        color: #333;
+        display: block;
+    }
+    .nav-menu li .sub-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 185px;
+        height: auto;
+        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.04);
+        background-color: #fff;
+        padding: 25px 0px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+        z-index: 9;
+        margin-top: -10px;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu li .sub-menu {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: 0;
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu li .sub-menu.show {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .nav-menu li .sub-menu li.sub-menu-close {
+        display: none;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu li .sub-menu li.sub-menu-close {
+            display: block;
+            font-size: 20px;
+            font-family: "Spectral", serif;
+            padding: 5px 30px;
+            padding-bottom: 15px;
+            cursor: pointer;
+            color: #FF7171;
+        }
+    }
+    .nav-menu li .sub-menu li a {
+        font-size: 16px;
+        font-family: "Spectral", serif;
+        padding: 8px 30px;
+    }
+    .nav-menu > li {
+        margin-right: 30px;
+        padding: 20px 0px;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li {
+            padding: 15px 0px;
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li:first-child {
+            margin-top: 15px;
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li:last-child {
+            margin-bottom: 15px;
+        }
+    }
+    .nav-menu > li.menu-item-has-children {
+        padding-right: 15px;
+        position: relative;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li.menu-item-has-children {
+            position: static;
+        }
+    }
+    .nav-menu > li.menu-item-has-children > a {
+        position: relative;
+    }
+    .nav-menu > li.menu-item-has-children > a:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 100%;
+        margin-left: 5px;
+        font-family: FontAwesome;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li.menu-item-has-children > a:after {
+            content: "";
+        }
+    }
+    .nav-menu > li > a {
+        font-family: "Spectral", serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li > a {
+            font-size: 20px;
+        }
+    }
+    .nav-menu > li > .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    @media only screen and (max-width: 991px) {
+        .nav-menu > li > .sub-menu {
+            top: 0;
+            left: 100%;
+        }
+    }
+
+    .mobile-nav-menu li {
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+    .mobile-nav-menu li.nav-menu-toggle {
+        display: none;
+        margin-right: 30px;
+    }
+    @media only screen and (max-width: 991px) {
+        .mobile-nav-menu li.nav-menu-toggle {
+            display: block;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .mobile-nav-menu li.nav-menu-toggle {
+            margin-right: 0;
+        }
+    }
+    .mobile-nav-menu li.search-toggle-open, .mobile-nav-menu li.search-toggle-close {
+        width: 18px;
+    }
+    @media only screen and (max-width: 991px) {
+        .mobile-nav-menu li.search-toggle-open, .mobile-nav-menu li.search-toggle-close {
+            margin-right: 20px;
+        }
+    }
+    .mobile-nav-menu li.hide {
+        display: none;
+    }
+    .mobile-nav-menu li svg {
+        height: 15px;
+    }
+</style>
+
+<div class="technology-1">
+    <div class="container">
+        <div class="col-md-9 technology-left">
+            <div class="business">
+                <div class=" blog-grid2">
+                    <img src="./assets/images/clarisse-meyer-fycgohba_s0-unsplash.jpg" class="img-responsive" alt="">
+                    <div class="blog-text">
+                        <h5>It's not about style. It's about substance. And when you combine these qualities, you can achieve truly special gifts</h5>
+                        <p><strong>It's not about style. It's about substance. And when you combine these qualities, you can achieve truly special gifts</strong> Photographer Andrea PiacquadioFor me, the "flash" of fashion is usually in the details – in the style pieces that are sold on the street, in the style that a designer shoots in. And these qualities are not just reflected in the clothes – they are also reflected in the person, which is especially important in relationships. If you combine all these qualities, you can achieve results that are in any fashion model's life, at least initially.If your style is reflected in your everyday life, then you are more likely to be interested in women. You are more likely to notice strange and strange things in them, and often different results. And if your substance is in consistency with the usual woman, then it can be extremely interesting to you.And besides, the interesting thing is that women are interested in such things, and interest in fashion is an interesting thing. For example, this is how a man at the beginning of a relationship usually looks and thinks – it is interesting that a beautiful girl with a strange idea about herself is almost always interested in him. But after the initial encounter, the man in this sense is already damaged. He is interested in her, but no one knows about it.And if you combine all this together, you can achieve incredible things. You can combine the desire to look beautiful in women, with the desire to convey a certain message to a larger number of people. For example, this is how a man at the beginning of a relationship usually looks and thinks – it is interesting that a beautiful girl with a strange idea about herself is almost always interested in him. But after the initial encounter, the man in this sense is already damaged. He is interested in her, but no one knows about it.And this is all happening because the main male factor in relationships is the desire of women to be loved and respected is based on a certain set of principles. And if you combine all this, you can achieve incredible things.You will naturally have difficulties in a relationship, because the system is based on assumptions. And this leads to the fact that problems in a relationship are not shown from the very beginning of the relationship. So it is not a fact that women are interested in them, but men are. And it is not a fact that they are interested in you, but men.You will have conflicts, because men have always been interested in women, and women are the center of attention. This leads to the fact that men are more likely to spend money on clothing, and on food, and on other things. Therefore, conflicts in a relationship are usually shown as a set of principles that are necessary for the relationship. And it is often surprising how much the system works.The point of conflict-theoretical self-confidence-this is the base, crude,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- technology-right -->
+    </div>
+</div>
+
+<style>
+    .technology-1 {
+        margin: 2em 0;
+    }
+
+    .business {
+        padding: 2em 2em 1.8em;
+        background: #fff;
+    }
+
+    .business li {
+        display: block;
+    }
+
+    .business li a {
+        color: #333333;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .business h3 {
+        color: #f53f1a;
+        font-size: 1.7em;
+        font-weight: 700;
+        margin: 0 0 0.5em;
+    }
+
+    .business h2 {
+        color: #f53f1a;
+        font-size: 1.7em;
+        font-weight: 700;
+        margin: 0.5em 0;
+    }
+
+    .business h2 a {
+        color: #f53f1a;
+    }
+
+    .business h4 {
+        color: #f53f1a;
+        font-size: 1.7em;
+        font-weight: 700;
+        margin: 0.5em 0;
+        text-align: center;
+    }
+
+    .business-bottom {
+        margin-top: 3em;
+    }
+
+    .business-top {
+        padding-bottom: 3em;
+        border-bottom: 1px solid #aeaeae;
+    }
+
+    h4.media-heading {
+        font-size: 1.5em;
+        color: #333333;
+        text-align: left;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .media-body p {
+        color: #9E9E9E;
+        font-size: 0.875em;
+        line-height: 1.8em;
+    }
+
+    .comment-bottom input[type="text"], .comment-bottom textarea {
+        background: none;
+        width: 100%;
+        outline: none;
+        border: 1px solid #e2e2e2;
+        padding: 1em 0.8em;
+        font-size: 1em;
+        color: #e2e2e2;
+        margin: 0 0 0.7em;
+        float: left;
+    }
+
+    .comment-bottom textarea {
+        resize: none;
+        margin: 0em 0 0.5em;
+        min-height: 180px;
+        -webkit-appearance: none;
+    }
+
+    .comment-bottom input[type="submit"] {
+        width: 11%;
+        font-size: 1.1em;
+        background: #fa4b2a;
+        padding: 0.5em 1em;
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    .comment-bottom input[type="submit"]:hover {
+        background: #333333;
+    }
+
+    .comment h3, .comment-top h2 {
+        color: #f53f1a;
+        font-size: 2.5em;
+        text-align: left;
+        padding: 0 0 0.5em;
+        font-weight: 400;
+    }
+
+    .comment {
+        padding: 3em 0 0;
+    }
+
+    .blog-text h5 {
+        font-size: 1.7em;
+        margin: 0.6em 0;
+        color: #f53f1a;
+        font-weight: 700;
+    }
+</style>
+
+<footer class="bg-191 pos-relative color-ccc bg-primary">
+    <div class="bg-dark-primary ptb-15 text-left">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <ul class="mtb-5 font-11 text-md-center text-right list-a-p-5">
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="terms.html">Terms and conditions</a></li>
+                        <li><a href="policy.html">Privacy policy</a></li>
+                    </ul>
+                </div><!-- col-sm-3 -->
+            </div><!-- row -->
+
+        </div><!-- container -->
+    </div><!-- container -->
+</footer>
+
+<style>
+    footer {
+        padding: 15px 0;
+    }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer a, footer ul, footer span, footer li, footer img, footer button {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer ul > li {
+        list-style: none;
+        display: inline-block;
+        line-height: 1.6;
+    }
+
+    .color-ccc * {
+        color: #ccc;
+    }
+</style>
